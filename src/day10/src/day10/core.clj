@@ -11,7 +11,4 @@
 
 (defn -main
   [& args]
-  (loop [cnt 0 str input-str]
-    (if (>= cnt 50)
-      (println (count str))
-      (recur (inc cnt) (look-and-say str)))))
+  (println (count (nth (iterate look-and-say input-str) 50))))
