@@ -3,12 +3,6 @@
             [clojure.set :as set-fns])
   (:gen-class))
 
-;; Read input into a map with set of two people as the key and happiness as val
-;; Gen permutations for all combos of people
-;; Partition each arrangement into groups of two, map this to value
-;; keep a max happiness
-;; return max happiness
-
 (def input-str (slurp "input.txt"))
 
 (defn input->tuples [input]
